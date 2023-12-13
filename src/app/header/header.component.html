@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <span>E-Commerce Application</span>
+  <span class="space-buttons"></span>
+  <mat-toolbar color="primary" *ngIf="isLoggedIn()">
+    <button class="btn btn-primary mr-2" routerLink="/">Home</button>
+    <button *ngIf="!isAdmin()" class="btn btn-primary mr-2" routerLink="/cart">Cart</button>
+    <button *ngIf="!isAdmin()" class="btn btn-primary mr-2" routerLink="/myOrders">My Orders</button>
+    <button *ngIf="isAdmin()" class="btn btn-primary mr-2" routerLink="/addNewProduct">Add New Product</button>
+    <button *ngIf="isAdmin()" class="btn btn-primary mr-2" routerLink="/showProductDetailes">Show All Products</button>
+    <button *ngIf="isAdmin()" class="btn btn-primary mr-2" routerLink="/orderInformation">Orders</button>
+  </mat-toolbar>
+  <button *ngIf="!isLoggedIn()" routerLink="/login" class="btn btn-primary mr-2">Login</button>
+  <button *ngIf="isLoggedIn()" (click)="logout()" class="btn btn-danger">Logout</button>
+</mat-toolbar>
+

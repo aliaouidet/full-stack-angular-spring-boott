@@ -1,0 +1,45 @@
+/* styles.css */
+
+/* Center content within mat-toolbar */
+mat-toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Space buttons class */
+  .space-buttons {
+    flex: 10 10 auto; /* Adjust the flex value to increase or decrease space */
+  }
+  
+  /* Style for buttons */
+  .btn-primary {
+    background-color: #007bff13;
+    border-color: #cfd1d4;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  .btn-primary:hover {
+    background-color: #0d6782f7;
+    border-color: #ffffff;
+    color: #fff; /* Change text color on hover */
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+    color: #fff; /* Change text color on hover */
+  }
+  
+  /* Add margin to all buttons for spacing */
+  .btn {
+    margin-right: 8px;
+  }
+  
